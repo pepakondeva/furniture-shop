@@ -1,0 +1,140 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Начало – Производство на мебели{% endblock %}
+
+
+{% block content %}
+<section class="hero">
+  <div class="carousel">
+    <div class="slide active">
+      <img src="{% static 'media/slider/img1.jpg' %}" alt="Слайд 1">
+    </div>
+    <div class="slide">
+      <img src="{% static 'media/slider/img2.jpg' %}" alt="Слайд 2">
+    </div>
+      <div class="slide">
+      <img src="{% static 'media/slider/img4.jpg' %}" alt="Слайд 3">
+    </div>
+      <div class="slide">
+      <img src="{% static 'media/slider/img5.jpg' %}" alt="Слайд 3">
+    </div>
+      <div class="slide">
+      <img src="{% static 'media/slider/img6.JPG' %}" alt="Слайд 3">
+    </div>
+  </div>
+
+  <div class="hero-content">
+    <h1>Домът започва с усещане</h1>
+    <p>Нашите мебели носят душа и характер</p>
+    <a href="{% url 'contacts' %}" class="fancy-button">Безплатна консултация</a>
+  </div>
+</section>
+
+
+    <!-- Intro Section -->
+<section class="intro-section reveal">
+  <div class="intro-content">
+    <h2>Вдъхваме живот на мечтания уют и стил</h2>
+    <p>Всяка идея при нас оживява в мебел, която носи топлина, стил и характер.
+      <p>Създаваме пространства, които вдъхват уют и вдъхновение.</p>
+    <a href="{% url 'forus' %}" class="fancy-button">Научи повече за нас</a>
+  </div>
+</section>
+
+
+    <h2 class="features-title">Всеки детайл има значение</h2>
+    <section class="features">
+        <div class="feature-card">
+            <h3>🪵 Естествени материали</h3>
+    <p>Използваме висококачествени дървесини и устойчиви материали за дълготрайност и стил.</p>
+  </div>
+  <div class="feature-card">
+    <h3>📐 Персонален дизайн</h3>
+    <p>Всеки проект е съобразен с индивидуалните нужди и вкус на клиента.</p>
+  </div>
+  <div class="feature-card">
+    <h3>🛠 Занаятчийска изработка</h3>
+    <p>Съчетавайки традиции и технологии, създаваме мебели с внимание към всеки детайл.</p>
+  </div>
+</section>
+
+    <!-- Materials Section -->
+<section class="materials-section">
+  <h2>Материали, които използваме</h2>
+  <div class="materials-grid">
+    <div class="material-card">
+      <img src="{% static 'media/materials/pdc.png' %}" alt="ПДЧ">
+      <h3>ПДЧ</h3>
+      <p>Здрав, икономичен и гъвкав материал с огромно разнообразие от декори. Идеален за кухни и мебели.</p>
+    </div>
+    <div class="material-card">
+      <img src="{% static 'media/materials/mdf.png' %}" alt="МДФ">
+      <h3>МДФ</h3>
+      <p>Фин и устойчив материал, идеален за боядисване и прецизна обработка.</p>
+    </div>
+    <div class="material-card">
+      <img src="{% static 'media/materials/masiv.png' %}" alt="Масив">
+      <h3>Масив</h3>
+      <p>Топлина, устойчивост и естествена красота за вашите мебели.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Palette Section -->
+<section class="palette-section">
+  <h2>Гами и палитри</h2>
+  <p>Неограничени възможности за избор на цветове</p>
+  <div class="palette-grid">
+    <!-- Естествени тонове -->
+    <div class="palette-color" style="background-color: #D6C1A3;"></div>
+    <div class="palette-color" style="background-color: #A3886B;"></div>
+    <div class="palette-color" style="background-color: #7A5741;"></div>
+    <div class="palette-color" style="background-color: #5C4033;"></div>
+    <div class="palette-color" style="background-color: #FFF8F0;"></div>
+    <div class="palette-color" style="background-color: #E1D7C6;"></div>
+    <div class="palette-color" style="background-color: #A9A29C;"></div>
+
+    <!-- Модерни неутрални -->
+    <div class="palette-color" style="background-color: #c9b79c;"></div>
+    <div class="palette-color" style="background-color: #b2a189;"></div>
+    <div class="palette-color" style="background-color: #9c836b;"></div>
+    <div class="palette-color" style="background-color: #82634a;"></div>
+    <div class="palette-color" style="background-color: #69513b;"></div>
+    <div class="palette-color" style="background-color: #4e3b2a;"></div>
+
+    <!-- Допълнителни модерни акценти -->
+    <div class="palette-color" style="background-color: #FFEAD0;"></div>
+    <div class="palette-color" style="background-color: #C2B280;"></div>
+    <div class="palette-color" style="background-color: #E4CDA7;"></div>
+    <div class="palette-color" style="background-color: #BFA6A0;"></div>
+    <div class="palette-color" style="background-color: #8C7B75;"></div>
+    <div class="palette-color" style="background-color: #726658;"></div>
+
+    <!-- Малко контраст -->
+    <div class="palette-color" style="background-color: #604439;"></div>
+    <div class="palette-color" style="background-color: #3E322D;"></div>
+    <div class="palette-color" style="background-color: #CFC8BD;"></div>
+    <div class="palette-color" style="background-color: #DAD2C2;"></div>
+  </div>
+</section>
+
+<section class="features-section">
+  <div class="f-card">
+    <div class="circle"><span class="counter" data-target="100">0</span>%</div>
+    <h3>Удовлетвореност</h3>
+    <p>Работим с внимание към вашите желания и гарантираме висока удовлетвореност.</p>
+  </div>
+  <div class="f-card">
+    <div class="circle"><span class="counter" data-target="100">0</span>%</div>
+    <h3>Качествено производство</h3>
+    <p>Качество, което се усеща. Красота, която остава.</p>
+  </div>
+  <div class="f-card">
+    <div class="circle"><span class="counter" data-target="100">0</span>%</div>
+    <h3>Гаранция</h3>
+    <p>Качество, на което можете да разчитате.</p>
+  </div>
+</section>
+
+{% endblock %}

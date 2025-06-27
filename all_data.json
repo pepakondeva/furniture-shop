@@ -1,0 +1,1120 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2025-04-15T16:19:11.244Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Hol",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2025-04-15T16:19:52.942Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "TV shaf",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2025-04-15T16:19:52.957Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "TV shaf",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2025-04-15T16:20:01.615Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "TV shaf",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2025-04-15T16:36:31.684Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Spalnq",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2025-04-15T18:07:56.912Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "spalni komplekti",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2025-04-15T22:05:19.460Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "spalni komplekti",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2025-04-15T22:05:41.098Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Проекти за спални",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2025-04-15T22:06:06.943Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Спални",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2025-04-15T22:06:31.125Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Кухненско обзавеждане",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2025-04-15T22:07:14.181Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "Обзавеждане на баня",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2025-04-15T22:07:43.632Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "Хотелско обзавеждане",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2025-04-15T22:07:55.515Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "6",
+    "object_repr": "Салони и магазини",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2025-04-15T22:15:12.958Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "7",
+    "object_repr": "Офис обзавеждане",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2025-04-15T22:15:46.380Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Спални",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2025-04-15T22:16:57.160Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Spalnq",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2025-04-15T22:16:57.160Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Hol",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2025-04-15T22:17:03.766Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Хол",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2025-04-15T22:17:09.929Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Кухня",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2025-04-15T22:17:16.469Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "Спалня",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2025-04-15T22:18:22.886Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Спалня",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2025-04-18T14:02:20.515Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Спалня",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2025-04-18T14:08:01.529Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "Кухня Сапфир",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2025-04-18T14:10:51.373Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "Кухня 'Бяла перла'",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2025-04-18T14:10:59.743Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "Кухня 'Сапфир'",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2025-04-18T15:43:55.656Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "Кухня 'Бяла перла'",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2025-04-18T15:44:44.359Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "Кухня 'Сапфир'",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2025-04-18T17:05:43.286Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "4",
+    "object_repr": "Кухня \"Кафе и мляко\"",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2025-04-18T17:06:24.771Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "4",
+    "object_repr": "Кухня \"Кафе и мляко\"",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2025-04-18T18:48:52.733Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "4",
+    "object_repr": "Кухня \"щКафе и мляко\"",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2025-04-18T18:49:02.372Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "4",
+    "object_repr": "Кухня 'Кафе и мляко'",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2025-04-18T19:08:56.179Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "5",
+    "object_repr": "Кухня 'Матча'",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2025-04-18T19:28:32.073Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "6",
+    "object_repr": "Кухня 'Аляска'",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2025-04-18T19:30:01.178Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "7",
+    "object_repr": "Кухня 'Тъмен шоколад'",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2025-04-18T19:36:24.853Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "8",
+    "object_repr": "Кухня 'Мъгла'",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2025-04-18T19:50:50.596Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "9",
+    "object_repr": "Кухня 'Сияйна белота'",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2025-04-18T19:51:27.745Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "9",
+    "object_repr": "Кухня 'Сияйна белота'",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Project\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2025-04-18T19:57:28.509Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "Кухня 'Бяла перла'",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2025-04-18T19:59:18.018Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "Кухня 'Бяла перла'",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2025-04-18T19:59:32.804Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "Кухня 'Сапфир'",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2025-04-18T20:03:43.659Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "Кухня 'Сапфир'",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2025-04-18T20:06:39.723Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "Кухня 'Сапфир'",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2025-04-18T20:08:10.815Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Кухненско обзавеждане",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2025-04-18T20:09:42.746Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Кухненско обзавеждане",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2025-04-18T20:10:14.773Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Кухненско обзавеждане",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2025-04-18T20:11:21.086Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Кухненско обзавеждане",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2025-04-18T20:13:27.720Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "Кухня 'Сапфир'",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2025-04-18T20:16:29.411Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "4",
+    "object_repr": "Кухня 'Кафе и мляко'",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2025-04-18T20:17:12.350Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "Кухня 'Сапфир'",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2025-04-18T20:18:09.831Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "Кухня 'Бяла перла'",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2025-04-18T20:18:56.150Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "5",
+    "object_repr": "Кухня 'Матча'",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 52,
+  "fields": {
+    "action_time": "2025-04-18T20:19:30.266Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "6",
+    "object_repr": "Кухня 'Аляска'",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 53,
+  "fields": {
+    "action_time": "2025-04-18T20:20:32.485Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "7",
+    "object_repr": "Кухня 'Тъмен шоколад'",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 54,
+  "fields": {
+    "action_time": "2025-04-18T20:21:01.364Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "8",
+    "object_repr": "Кухня 'Мъгла'",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 55,
+  "fields": {
+    "action_time": "2025-04-18T20:21:44.085Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "9",
+    "object_repr": "Кухня 'Сияйна белота'",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 56,
+  "fields": {
+    "action_time": "2025-04-18T21:20:00.166Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "10",
+    "object_repr": "Кухня 'Мента с мляко'",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 57,
+  "fields": {
+    "action_time": "2025-04-18T21:23:32.280Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "11",
+    "object_repr": "Кухня 'Облак'",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 58,
+  "fields": {
+    "action_time": "2025-04-18T21:24:45.479Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "11",
+    "object_repr": "Кухня 'Облак'",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 59,
+  "fields": {
+    "action_time": "2025-04-18T21:25:52.015Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "12",
+    "object_repr": "Кухня 'С дъх на канела'",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 60,
+  "fields": {
+    "action_time": "2025-04-18T21:27:24.156Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "13",
+    "object_repr": "Кухня 'Пясъчни дюни'",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 61,
+  "fields": {
+    "action_time": "2025-04-18T21:27:58.667Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "13",
+    "object_repr": "Кухня 'Пясъчни дюни'",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 62,
+  "fields": {
+    "action_time": "2025-04-18T21:28:02.360Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "12",
+    "object_repr": "Кухня 'С дъх на канела'",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 63,
+  "fields": {
+    "action_time": "2025-05-03T12:30:04.436Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "13",
+    "object_repr": "Кухня 'Пясъчни дюни'",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"project item image\", \"object\": \"Image for \\u041a\\u0443\\u0445\\u043d\\u044f '\\u041f\\u044f\\u0441\\u044a\\u0447\\u043d\\u0438 \\u0434\\u044e\\u043d\\u0438'\"}}, {\"added\": {\"name\": \"project item image\", \"object\": \"Image for \\u041a\\u0443\\u0445\\u043d\\u044f '\\u041f\\u044f\\u0441\\u044a\\u0447\\u043d\\u0438 \\u0434\\u044e\\u043d\\u0438'\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 64,
+  "fields": {
+    "action_time": "2025-05-03T13:01:57.571Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "Кухня 'Бяла перла'",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"project item image\", \"object\": \"Image for \\u041a\\u0443\\u0445\\u043d\\u044f '\\u0411\\u044f\\u043b\\u0430 \\u043f\\u0435\\u0440\\u043b\\u0430'\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 65,
+  "fields": {
+    "action_time": "2025-05-03T13:02:23.316Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "Кухня 'Бяла перла'",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 66,
+  "fields": {
+    "action_time": "2025-05-03T13:03:41.401Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "Кухня 'Бяла перла'",
+    "action_flag": 2,
+    "change_message": "[{\"deleted\": {\"name\": \"project item image\", \"object\": \"Image for \\u041a\\u0443\\u0445\\u043d\\u044f '\\u0411\\u044f\\u043b\\u0430 \\u043f\\u0435\\u0440\\u043b\\u0430'\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 67,
+  "fields": {
+    "action_time": "2025-05-03T13:03:51.919Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "13",
+    "object_repr": "Кухня 'Пясъчни дюни'",
+    "action_flag": 2,
+    "change_message": "[{\"deleted\": {\"name\": \"project item image\", \"object\": \"Image for \\u041a\\u0443\\u0445\\u043d\\u044f '\\u041f\\u044f\\u0441\\u044a\\u0447\\u043d\\u0438 \\u0434\\u044e\\u043d\\u0438'\"}}, {\"deleted\": {\"name\": \"project item image\", \"object\": \"Image for \\u041a\\u0443\\u0445\\u043d\\u044f '\\u041f\\u044f\\u0441\\u044a\\u0447\\u043d\\u0438 \\u0434\\u044e\\u043d\\u0438'\"}}]"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$PBK34wMHJhusyoEGcTEcvT$2WEJSpMs1IZK6obNRz/Y6TCo+v7Qkh+Lneyj6U6HmP8=",
+    "last_login": "2025-05-03T12:00:00.433Z",
+    "is_superuser": true,
+    "username": "pepa",
+    "first_name": "",
+    "last_name": "",
+    "email": "pepa@abv.bg",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-04-15T15:33:00.575Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "bll093yv4h2njqqiccr09a7yxzmnvz0d",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln-O0tJzxksr3eNAyiW8qkQd4dIKaB9M_NeIuVtbWlbeE4jibPQ4vS7YS4PnnZA9zzduix9WucR5a7Igy7y2omfl8P9O2h5ad_aBIsaIFpWXJTSrDUQxGqD87UqA5FqNMNABTTUYMGxx4gFvEGHVMT7A8MQN48:1uBBXE:g3T27f7vcYUDuo3jb9tjyBIEgJJaDzfMnTbmevIIZfs",
+    "expire_date": "2025-05-17T12:00:00.435Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "dmmhhl1nhm8iie5mjom8zwwehsnd4tlw",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln-O0tJzxksr3eNAyiW8qkQd4dIKaB9M_NeIuVtbWlbeE4jibPQ4vS7YS4PnnZA9zzduix9WucR5a7Igy7y2omfl8P9O2h5ad_aBIsaIFpWXJTSrDUQxGqD87UqA5FqNMNABTTUYMGxx4gFvEGHVMT7A8MQN48:1u4izH:dIunV29I8tiDxhHPYuF7EhmebZQoWoByy0kWYwdsn5o",
+    "expire_date": "2025-04-29T16:18:15.554Z"
+  }
+},
+{
+  "model": "store.category",
+  "pk": 3,
+  "fields": {
+    "name": "Хол",
+    "description": "Хол",
+    "slug": "hol"
+  }
+},
+{
+  "model": "store.category",
+  "pk": 4,
+  "fields": {
+    "name": "Кухня",
+    "description": "кухня",
+    "slug": "kuhnya"
+  }
+},
+{
+  "model": "store.category",
+  "pk": 5,
+  "fields": {
+    "name": "Спалня",
+    "description": "спалня",
+    "slug": "spalnya"
+  }
+},
+{
+  "model": "store.project",
+  "pk": 2,
+  "fields": {
+    "name": "Спални",
+    "description": "Проекти за спални",
+    "slug": "proekti-za-spalni"
+  }
+},
+{
+  "model": "store.project",
+  "pk": 3,
+  "fields": {
+    "name": "Кухненско обзавеждане",
+    "description": "🏡 Модулни кухни по поръчка.\r\nПроектирани за Вашето пространство. Изработени според Вашия стил.",
+    "slug": "kuhnensko-obzavezhdane"
+  }
+},
+{
+  "model": "store.project",
+  "pk": 4,
+  "fields": {
+    "name": "Обзавеждане на баня",
+    "description": "Проект за обзавеждане на баня",
+    "slug": "obzavezhdane-na-banya"
+  }
+},
+{
+  "model": "store.project",
+  "pk": 5,
+  "fields": {
+    "name": "Хотелско обзавеждане",
+    "description": "Хотелско обзавеждане",
+    "slug": "hotelsko-obzavezhdane"
+  }
+},
+{
+  "model": "store.project",
+  "pk": 6,
+  "fields": {
+    "name": "Салони и магазини",
+    "description": "салони и магазини",
+    "slug": "saloni-i-magazini"
+  }
+},
+{
+  "model": "store.project",
+  "pk": 7,
+  "fields": {
+    "name": "Офис обзавеждане",
+    "description": "Офис обзавеждане",
+    "slug": "ofis-obzavezhdane"
+  }
+},
+{
+  "model": "store.projectitem",
+  "pk": 2,
+  "fields": {
+    "name": "Кухня 'Бяла перла'",
+    "description": "Всяка мечтана кухня има начало. Ние сме тук за него.\r\nНяма стандартна формула. Само Вие знаете как изглежда Вашата идеална кухня – ние просто помагаме да я изградите.\r\n\r\n🔹 Модули, които пасват на пространството и начина Ви на живот\r\n🔹 Материали, които отговарят на усещането Ви за дом, може да избирате между ПДЧ, МДФ и масив\r\n🔹 Дизайн, вдъхновен от Вас\r\n\r\n🛠️ Ние ще изработим всеки шкаф, всяко чекмедже и детайл, за да получите не просто кухня, а емоция с място.",
+    "slug": "kuhnya-sapfir",
+    "image": "images/490656008_2895795770626011_6396948958980443529_n_XHxuC41.jpg",
+    "project": 3
+  }
+},
+{
+  "model": "store.projectitem",
+  "pk": 3,
+  "fields": {
+    "name": "Кухня 'Сапфир'",
+    "description": "Домът започва от кухнята\r\nКогато отворите шкафа и всичко е точно там, където трябва. Когато всеки цвят Ви носи удоволствие. Когато знаете, че това пространство е направено точно за Вас.\r\n\r\n✨ Всяка кухня е уникален проект – съобразен с Вашия вкус, ритъм и нужди.\r\n📐 Модулна конфигурация – пълна свобода в подредбата.\r\n🎨 Цветове, форми, текстури – изборът е изцяло Ваш.\r\n🪵 Материали: ПДЧ за практичност, МДФ за стил, масив за душа.\r\n\r\n📞 Позволете ни да превърнем идеята Ви в уют.",
+    "slug": "kuhnya-byala-perla",
+    "image": "images/489566222_741040784912846_3582596271324225638_n_659HGPt.jpg",
+    "project": 3
+  }
+},
+{
+  "model": "store.projectitem",
+  "pk": 4,
+  "fields": {
+    "name": "Кухня 'Кафе и мляко'",
+    "description": "Кухнята, където започва и свършва денят Ви\r\nТова не е просто място за готвене. Това е мястото, където се събирате с близките си. Където се раждат аромати, усмивки и спомени.\r\n\r\n🎨 Ние ще създадем кухня, която отразява Вашия стил и живот.\r\n🧩 Работим с модулна система, за да подредим пространството както Ви е удобно.\r\n🪵 Избирате между ПДЧ, МДФ или масив – топлина, изчистеност или характер.\r\n🛠️ Всеки детайл се изработва лично за Вас.\r\n\r\n📩 Разкажете ни за мечтата си – ние ще я проектираме.",
+    "slug": "kuhnya-kafe-i-mlyako",
+    "image": "images/ChatGPT_Image_Apr_18_2025_08_02_56_PM.png",
+    "project": 3
+  }
+},
+{
+  "model": "store.projectitem",
+  "pk": 5,
+  "fields": {
+    "name": "Кухня 'Матча'",
+    "description": "Спокойствието си има място. И то е във Вашата кухня.\r\nМясто, където сутрешното кафе ухае на спокойствие, а всяко движение е лесно и плавно. Място, създадено точно по Вашите представи.\r\n\r\n📐 Проектираме кухни по модули, така че всичко да пасне – физически и емоционално.\r\n🎨 Цветовете избирате Вие.\r\n🪵 Материалите – ПДЧ, МДФ или масив – говорят на езика на Вашия дом.\r\n\r\n📩 Споделете ни усещането, което търсите. Ние ще го превърнем в дизайн.",
+    "slug": "kuhnya-matcha",
+    "image": "images/25eb6eb8-f2ed-428b-8d62-07b2ff147fb0.png",
+    "project": 3
+  }
+},
+{
+  "model": "store.projectitem",
+  "pk": 6,
+  "fields": {
+    "name": "Кухня 'Аляска'",
+    "description": "Вашата кухня трябва да Ви прилича\r\nОбичате ли топли тонове и дървесна текстура? Или сте фен на изчистени линии и светли повърхности? Какъвто и да е Вашият стил – ние ще го превърнем в реалност.\r\n\r\n🧩 Модули по размер\r\n🎨 Цветове и стилове по избор\r\n🪵 ПДЧ за лекота, МДФ за модерност, масив за плътност и душевност\r\n🔧 Всеки детайл изработен с отношение\r\n\r\n💬 Разкажете ни какво Ви прави щастливи в една кухня. Ние ще го създадем.",
+    "slug": "kuhnya-alyaska",
+    "image": "images/ChatGPT_Image_Apr_18_2025_10_27_36_PM.png",
+    "project": 3
+  }
+},
+{
+  "model": "store.projectitem",
+  "pk": 7,
+  "fields": {
+    "name": "Кухня 'Тъмен шоколад'",
+    "description": "Истинският уют се крие в детайлите\r\nПонякога най-специалните моменти се случват точно в кухнята – една тиха закуска, аромат на домашно ястие, разговор между две кафета.\r\n\r\n🎨 Затова правим кухни, които се усещат като дом.\r\n🧩 Модулен дизайн – всяко нещо е на мястото си.\r\n🪵 Избор от ПДЧ, МДФ или масив, съобразен с Вашето усещане.\r\n🔧 Всеки рафт, панел и детайл – изработен специално за Вас.\r\n\r\n📩 Споделете с нас как изглежда Вашето усещане за уют.",
+    "slug": "kuhnya-tmen-shokolad",
+    "image": "images/Компактна_кухня_с_дървени_елементи.png",
+    "project": 3
+  }
+},
+{
+  "model": "store.projectitem",
+  "pk": 8,
+  "fields": {
+    "name": "Кухня 'Мъгла'",
+    "description": "Вашата кухня – началото на всеки нов ден\r\nТам, където слънцето огрява плота, където ароматът на кафе среща топлината на дървото. Там започва денят Ви – и ние ще го направим специален.\r\n\r\n🧩 Модулна система, създадена около Вашите навици\r\n🎨 Цветове, които Ви успокояват или вдъхновяват\r\n🪵 Изработка от ПДЧ, МДФ или масив – според усещането, което търсите\r\n🔨 Всеки компонент – премислен, красив, личен\r\n\r\n💬 Създайте кухня, в която денят Ви започва с усмивка.",
+    "slug": "kuhnya-mgla",
+    "image": "images/ChatGPT_Image_Apr_18_2025_10_35_41_PM.png",
+    "project": 3
+  }
+},
+{
+  "model": "store.projectitem",
+  "pk": 9,
+  "fields": {
+    "name": "Кухня 'Сияйна белота'",
+    "description": "Няма друга като нея – защото няма други като Вас\r\nВсеки човек е различен. Всяка кухня – също. Нашата цел е да създадем пространство, което говори с Вашия език, създадено по Вашия ритъм.\r\n\r\n🧩 Гъвкаво модулно изграждане\r\n🎨 Цветова палитра, подбрана от Вас\r\n🪵 Материали с усещане: ПДЧ за лекота, МДФ за модерност, масив за характер\r\n🛠️ Изработка на всеки елемент по размер и идея\r\n\r\n📞 Свържете се с нас – разкажете ни за себе си. Ще направим кухня, която Ви прилича.",
+    "slug": "kuhnya-siyajna-belota",
+    "image": "images/Светла_къща_с_кухненски_акценти.png",
+    "project": 3
+  }
+},
+{
+  "model": "store.projectitem",
+  "pk": 10,
+  "fields": {
+    "name": "Кухня 'Мента с мляко'",
+    "description": "Кухнята е повече от мебели – тя е преживяване\r\nТам, където се смеете, експериментирате, учите децата да бъркат в купата и посрещате приятели с нещо топло. Това е място за истинския живот.\r\n\r\n🎯 Ние ще проектираме кухнята така, че да побере всички тези моменти.\r\n🧩 Модулите ще паснат идеално на Вашето ежедневие.\r\n🪵 Материалите ще отразяват Вашия стил – ПДЧ, МДФ или масив.\r\n🔧 Всеки шкаф, всеки рафт – с мисъл за Вас и Вашите хора.\r\n\r\n📩 Готови сме да създадем не просто кухня, а споделено пространство.",
+    "slug": "kuhnya-menta-s-mlyako",
+    "image": "images/Screenshot_2025-04-19_at_0.19.47.png",
+    "project": 3
+  }
+},
+{
+  "model": "store.projectitem",
+  "pk": 11,
+  "fields": {
+    "name": "Кухня 'Облак'",
+    "description": "Мястото, където сте себе си\r\nКухнята не е само за готвене.\r\nТам си пускате музика, танцувате, говорите с любимите си хора.\r\nТам сте у дома.\r\n\r\n🎯 Всяка кухня, която правим, е различна – като хората, за които я правим.\r\n🧩 Гъвкави модули – за големи семейства или малки удоволствия.\r\n🪵 Избирате между практичност и лукс – или ги комбинирате.\r\n🔧 Залагаме на удобство, дълготрайност и душа.\r\n\r\n📩 Защото кухнята трябва да Ви прегръща, не да Ви ограничава.",
+    "slug": "kuhnya-oblak",
+    "image": "images/Модерна_Ъ-образна_кухня.png",
+    "project": 3
+  }
+},
+{
+  "model": "store.projectitem",
+  "pk": 12,
+  "fields": {
+    "name": "Кухня 'С дъх на канела'",
+    "description": "Място за спомени, не просто за уреди\r\nОт първата чаша кафе до късните разговори на чаша вино –\r\nтова е повече от кухня.\r\nТова е мястото, където животът тече естествено.\r\n\r\n🎯 Вашата идея е отправната ни точка.\r\n🧩 Ние ще я превърнем във функционално, красиво пространство.\r\n🪵 Материали, които докосват – ПДЧ, МДФ или масив.\r\n🔧 Всеки рафт има причина. Всеки детайл има значение.\r\n\r\n📩 Готови сме да създадем заедно не просто кухня, а преживяване.",
+    "slug": "kuhnya-s-dh-na-kanela",
+    "image": "images/Компактна_кухня_с_дървени_детаили.png",
+    "project": 3
+  }
+},
+{
+  "model": "store.projectitem",
+  "pk": 13,
+  "fields": {
+    "name": "Кухня 'Пясъчни дюни'",
+    "description": "Там, където домът оживява\r\nКухнята не е просто място – тя е сцена на ежедневните Ви ритуали.\r\nСутрешното „Добро утро“, ароматът на прясно изпечен хляб,\r\nмалките разговори, докато животът се случва около плота.\r\n\r\n🎯 Ще проектираме кухня, която живее с Вас.\r\n🧩 Модули, които се движат в ритъма на Вашето ежедневие.\r\n🪵 Материали с характер – от практично ПДЧ до емоционален масив.\r\n🔧 Рафт до рафт – всичко с мисъл, всичко на място.\r\n\r\n📩 Нека създадем Вашето място за вкусни спомени.",
+    "slug": "kuhnya-pyaschni-dyuni",
+    "image": "images/Модерна_кухня_с_естествени_тонове.png",
+    "project": 3
+  }
+}
+]

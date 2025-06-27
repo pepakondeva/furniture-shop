@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{{ item_details.name }} – Детайли{% endblock %}
+
+{% block content %}
+<div class="breadcrumb">
+  <a href="{% url 'store' %}">Начало</a> /
+  <a href="{% url 'product_list_by_category' furniture_details.category.slug furniture_details.category.id %}">
+    {{ furniture_details.category.name }}
+  </a>
+  <span>{{ furniture_details.name }}</span>
+</div>
+
+<section class="item-detail">
+  <div class="main-info">
+    {% if furniture_details.image %}
+      <div class="main-image-wrapper">
+        <a href="{{ furniture_details.image.url }}" data-lightbox="main-image">
+          <img src="{{ furniture_details.image.url }}" alt="{{ furniture_details.name }}" class="main-image">
+        </a>
+      </div>
+    {% endif %}
+
+    <div class="info-text">
+      <h1>{{ furniture_details.name }}</h1>
+      {% if furniture_details.description %}
+        <p>{{ furniture_details.description|linebreaksbr }}</p>
+      {% endif %}
+    <div class="cta-center">
+      <a href="{% url 'contacts' %}" class="fancy-button">
+        <span>📞 Свържете се с нас</span>
+      </a>
+    </div>
+    </div>
+  </div>
+
+{% if furniture_details.furniture_images.all %}
+  <div class="gallery">
+    <h2>Още снимки</h2>
+    <div class="gallery-grid">
+      {% for img in furniture_details.furniture_images.all %}
+        <a href="{{ img.image.url }}" data-lightbox="gallery">
+          <img src="{{ img.image.url }}" alt="{{ img.alt_text }}">
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}
+
+
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<!-- Lightbox2 JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{{ current_project.name }} – Проекти{% endblock %}
+
+{% block extra_css %}
+  <link rel="stylesheet" href="{% static 'css/project_item.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="project-items-header">
+  <h1>{{ current_project.name }}</h1>
+  <p>{{ current_project.description|default:"Разгледайте мебелите, включени в този проект." |linebreaksbr  }}</p>
+</section>
+
+<section class="project-items-">
+  {% if projectsitems %}
+    <div class="project-items-grid">
+      {% for item in projectsitems %}
+        <div class="project-item-card">
+          {% if item.image %}
+            <img src="{{ item.image.url }}" alt="{{ item.name }}">
+          {% endif %}
+          <h3>{{ item.name }}</h3>
+         {% if item.description %}
+             <p>{{ item.description|truncatewords:20|linebreaksbr }}</p>
+         {% endif %}
+
+            <a href="{% url 'project-item-detail' item.slug item.id %}" class="fancy-button">Към проекта</a>
+
+        </div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p class="empty-message">Все още няма добавени мебели за този проект.</p>
+  {% endif %}
+</section>
+{% endblock %}

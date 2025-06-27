@@ -1,0 +1,129 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>{% block title %}My Furniture Store{% endblock %}</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="{% static 'css/base.css' %}">
+  <link rel="stylesheet" href="{% static 'css/forus.css' %}">
+  <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+  <link rel="stylesheet" href="{% static 'css/services.css' %}">
+  <link rel="stylesheet" href="{% static 'css/main_page.css' %}">
+  <link rel="stylesheet" href="{% static 'css/project_item.css' %}">
+  <link rel="stylesheet" href="{% static 'css/project_item_detail.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+<!-- ✅ Navbar -->
+<nav class="navbar">
+  <!-- Logo on the left -->
+  <div class="logo">
+    <a href="{% url 'store' %}">
+      <img src="{% static 'media/images/logo.png' %}" alt="DeKat Logo" class="logo-img">
+    </a>
+  </div>
+
+  <!-- Navigation links -->
+  <ul class="nav-links" id="nav-links">
+    <li><a href="{% url 'store' %}">Начална страница</a></li>
+    <li><a href="{% url 'forus' %}">За нас</a></li>
+
+    <!-- Projects dropdown -->
+    <li class="dropdown">
+      <a href="#">Проекти ▾</a>
+      <ul class="dropdown-menu">
+        {% for project in projects %}
+          <li><a href="{% url 'product_list_by_project' project.slug project.id %}">{{ project.name }}</a></li>
+        {% empty %}
+          <li><a href="#">Няма проекти</a></li>
+        {% endfor %}
+      </ul>
+    </li>
+
+    <li><a href="{% url 'services' %}">Услуги</a></li>
+
+    <!-- Categories dropdown -->
+    <li class="dropdown">
+      <a href="#">Категории ▾</a>
+      <ul class="dropdown-menu">
+        {% for category in categories %}
+          <li><a href="{% url 'product_list_by_category' category.slug category.id %}">{{ category.name }}</a></li>
+        {% empty %}
+          <li><a href="#">Няма категории</a></li>
+        {% endfor %}
+      </ul>
+    </li>
+
+    <li><a href="{% url 'contacts' %}">Контакти</a></li>
+  </ul>
+
+  <!-- Mobile menu button -->
+  <button class="menu-toggle" id="menu-toggle">☰</button>
+</nav>
+
+<!--  Page content -->
+<div class="container">
+  {% block content %}{% endblock %}
+</div>
+
+
+<!--  Footer -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <h2>DeKat <span class="accent">Мебели</span></h2>
+      <p>Създаваме мебели, които превръщат къщата в дом.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Навигация</h4>
+      <ul>
+        <li><a href="{% url 'store' %}">Начало</a></li>
+        <li><a href="{% url 'forus' %}">За нас</a></li>
+        <li><a href="{% url 'services' %}">Услуги</a></li>
+        <li><a href="{% url 'contacts' %}">Контакти</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Контакт</h4>
+      <p>📞 <a href="tel:+359890202203">+359 890 202 203</a></p>
+      <p>📧 <a href="mailto:info@dekat.bg">info@dekat.bg</a></p>
+      <p>📍 гр.Банско</p>
+    </div>
+
+    <div class="footer-socials">
+      <h4>Последвайте ни</h4>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/share/15YeCScxjr/" target="_blank" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/dekatfurniture/" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy;2025 DeKat. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+<script src="{% static 'js/carousel.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+<script src="{% static 'js/scrip2.js' %}"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+
+
+</body>
+</html>
