@@ -1,0 +1,149 @@
+/* {*/
+/*  --primary: #452815;*/
+/*  --secondary: #B6885D;*/
+/*  --third: #DFC49B;*/
+/*  --dark: #73411f;*/
+/*  --light: #FED8A6;*/
+/*  --bg: #fff8f0;*/
+/*}*/
+
+/*:root {*/
+/*  --background: #121212;*/
+/*  --text-color: #e0e0e0;*/
+/*  --primary: #d3b494; !* Златисто акцентен *!*/
+/*  --secondary: #7a5741; !* Топъл кафяв нюанс *!*/
+/*  --third: #1e1e1e; !* Тъмен фон за секции *!*/
+/*}*/
+
+/*:root {*/
+/*  --background: #f8f5f2;  !* Много светло бежово - естествен фон *!*/
+/*  --text-color: #2e2e2e;  !* Меко тъмно сиво - за основния текст *!*/
+/*  --primary: #7a5741;      !* Кафяво като дървесина - акцент *!*/
+/*  !*  --primary: #d3b494; !* Златисто акцентен *!*!*/
+
+/*  --secondary: #d3b494;    !* Светло златисто - за акценти и бутони *!*/
+/*  --third: #eae7dc;    !* Светло бежово за отделяне на секции *!*/
+/*  --accent-dark: #5c4033;  !* По-тъмно кафяво за по-сериозни елементи *!*/
+/*}*/
+
+
+
+
+.project-items-header {
+  text-align: center;
+  background-color: var(--background);
+  padding: 3rem 1rem 2rem;
+}
+
+.project-items-header h1 {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.project-items-header p {
+  font-size: 1.1rem;
+  color: var(--dark);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.project-items-container {
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 2rem 4rem;
+}
+
+.project-items-grid {
+  display: grid;
+  /*grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));*/
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.project-item-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+  margin: 2rem;
+}
+
+.project-item-card:hover {
+  transform: translateY(-6px);
+}
+
+.project-item-card img {
+  max-width: 100%;
+  height: 350px; /* Или височина, която прецениш */
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.project-item-card h3 {
+  color: var(--primary);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-item-card p {
+  font-size: 1rem;
+  color: var(--dark);
+  line-height: 1.5;
+}
+
+.empty-message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--dark);
+  padding: 2rem;
+  background-color: #fff8f0;
+  border-radius: 8px;
+}
+
+.btn-detail {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.4rem;
+  background-color: var(--secondary);
+  color: #fff;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn-detail:hover {
+  background-color: var(--third);
+  color: var(--dark);
+}
+
+/*Галерия*/
+
+.project-item-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.project-item-gallery .thumbnail {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border: 2px solid var(--third);
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.project-item-gallery .thumbnail:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
