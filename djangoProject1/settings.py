@@ -13,6 +13,9 @@ import os
 from pathlib import Path
 import dj_database_url
 from decouple import config, Csv
+from dotenv import load_dotenv
+load_dotenv()
+
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -93,9 +96,11 @@ WSGI_APPLICATION = 'djangoProject1.wsgi.application'
 #     }
 # }
 
+
+
 DATABASES = {
-    "default": dj_database_url.config(
-        default=f"postgres://{config('DB_USER')}:{config('DB_PASSWORD')}@{config('DB_HOST', default='127.0.0.1')}:{config('DB_PORT', default='5432')}/{config('DB_NAME')}"
+    'default': dj_database_url.config(
+        default=os.environ.get('DATABASE_URL'),
     )
 }
 
