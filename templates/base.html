@@ -19,7 +19,6 @@
 
 <body>
 
-<!-- ✅ Navbar -->
 <nav class="navbar">
   <!-- Logo on the left -->
   <div class="logo">
@@ -28,12 +27,10 @@
     </a>
   </div>
 
-  <!-- Navigation links -->
   <ul class="nav-links" id="nav-links">
     <li><a href="{% url 'store' %}">Начална страница</a></li>
     <li><a href="{% url 'forus' %}">За нас</a></li>
 
-    <!-- Projects dropdown -->
     <li class="dropdown">
       <a href="#">Проекти ▾</a>
       <ul class="dropdown-menu">
@@ -47,7 +44,6 @@
 
     <li><a href="{% url 'services' %}">Услуги</a></li>
 
-    <!-- Categories dropdown -->
     <li class="dropdown">
       <a href="#">Категории ▾</a>
       <ul class="dropdown-menu">
@@ -62,17 +58,14 @@
     <li><a href="{% url 'contacts' %}">Контакти</a></li>
   </ul>
 
-  <!-- Mobile menu button -->
   <button class="menu-toggle" id="menu-toggle">☰</button>
 </nav>
 
-<!--  Page content -->
 <div class="container">
   {% block content %}{% endblock %}
 </div>
 
 
-<!--  Footer -->
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-brand">
