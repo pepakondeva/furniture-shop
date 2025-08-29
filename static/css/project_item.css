@@ -28,10 +28,9 @@
 
 
 
-
 .project-items-header {
   text-align: center;
-  background-color: var(--background);
+  /*background-color: var(--b);*/
   padding: 3rem 1rem 2rem;
 }
 
