@@ -13,7 +13,7 @@
   <p>{{ current_project.description|default:"Разгледайте мебелите, включени в този проект." |linebreaksbr  }}</p>
 </section>
 
-<section class="project-items-">
+<section class="project-items-container">
   {% if projectsitems %}
     <div class="project-items-grid">
       {% for item in projectsitems %}

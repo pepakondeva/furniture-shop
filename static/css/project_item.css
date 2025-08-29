@@ -68,7 +68,7 @@
   padding: 1.5rem;
   text-align: center;
   transition: transform 0.3s ease;
-  margin: 2rem;
+  margin: 0;
 }
 
 .project-item-card:hover {
@@ -146,4 +146,25 @@
 .project-item-gallery .thumbnail:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+@media (max-width: 768px) {
+  .project-items-grid {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+
+
+  .project-item-card {
+    margin: 1rem 0;
+  }
+
+  .project-items-header h1 {
+    font-size: 2rem;
+  }
+
+  .project-items-header p {
+    font-size: 1rem;
+  }
 }
