@@ -48,20 +48,20 @@
 }
 
 .project-items-container {
+  width: 100%;
   max-width: 1200px;
   margin: 3rem auto;
-  padding: 0 2rem 4rem;
+  padding: 0 1rem 4rem;
 }
 
 .project-items-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  /*grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));*/
   gap: 2rem;
 }
 
 .project-item-card {
-  /*background-color: #fff;*/
+  background-color: #fff;
   border-radius: 12px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
   padding: 1.5rem;
@@ -104,7 +104,7 @@
   border-radius: 8px;
 }
 
-.btn-detail {
+.btn-detail{
   display: inline-block;
   margin-top: 1rem;
   padding: 0.6rem 1.4rem;
@@ -124,14 +124,6 @@
 }
 
 /*Галерия*/
-
-.project-items-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
-  background: red;
-}
-
 
 .project-item-gallery {
   display: flex;
