@@ -148,6 +148,8 @@ STATICFILES_DIRS = [BASE_DIR / 'static']
 
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
@@ -165,7 +167,7 @@ DEFAULT_FROM_EMAIL = config('EMAIL_HOST_USER')
 
 CLOUDINARY_STORAGE = {
     'CLOUD_NAME': config('MY_CLOUD_NAME'),
-    'API_KEY': config('MY_CLOUD_PASSWORD'),
+    'API_KEY': config('MY_CLOUD_API_KEY'),
     'API_SECRET': config('MY_CLOUD_API_SECRET'),
 }
 
