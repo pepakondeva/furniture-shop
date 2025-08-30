@@ -16,6 +16,10 @@ from decouple import config, Csv
 from dotenv import load_dotenv
 load_dotenv()
 
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -29,7 +33,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config("DJANGO_SECRET_KEY")
 
 # DEBUG = config("DJANGO_DEBUG", default=False, cast=bool)
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -146,10 +150,9 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = [BASE_DIR / 'static']
 
-DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+# MEDIA_URL = '/media/'
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
@@ -164,10 +167,11 @@ EMAIL_HOST_USER = config('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
 DEFAULT_FROM_EMAIL = config('EMAIL_HOST_USER')
 
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
-CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': config('MY_CLOUD_NAME'),
-    'API_KEY': config('MY_CLOUD_API_KEY'),
-    'API_SECRET': config('MY_CLOUD_API_SECRET'),
-}
-
+cloudinary.config(
+    cloud_name=config('MY_CLOUD_NAME'),
+    api_key=config('MY_CLOUD_API_KEY'),
+    api_secret=config('MY_CLOUD_API_SECRET'),
+    secure=True
+)

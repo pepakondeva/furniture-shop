@@ -1,3 +1,4 @@
+from cloudinary.models import CloudinaryField
 from django.db import models
 
 
@@ -17,7 +18,7 @@ class ProjectItem(models.Model):
     name = models.CharField(max_length=255)
     description = models.TextField()
     slug = models.SlugField(max_length=255)
-    image = models.ImageField(upload_to='images/')
+    image = CloudinaryField('image')
 
     # FK
     project = models.ForeignKey(Project,
@@ -39,7 +40,7 @@ class ProjectItemImage(models.Model):
         blank=True,
         related_name='images'
     )
-    image = models.ImageField(upload_to='images/project_items/')
+    image = CloudinaryField('image')
     alt_text = models.CharField(max_length=255, blank=True)
 
     def __str__(self):
@@ -63,7 +64,7 @@ class Furniture(models.Model):
     description = models.TextField()
     price = models.DecimalField(max_digits=10, decimal_places=2)
     slug = models.SlugField(max_length=255)
-    image = models.ImageField(upload_to='images/')
+    image = CloudinaryField('image')
 
     # FK
     category = models.ForeignKey(Category,
@@ -86,7 +87,8 @@ class FurnitureImage(models.Model):
         blank=True,
         related_name='furniture_images'
     )
-    image = models.ImageField(upload_to='images/furniture_items/')
+    image = CloudinaryField('image')
+
     alt_text = models.CharField(max_length=255, blank=True)
 
     def __str__(self):
