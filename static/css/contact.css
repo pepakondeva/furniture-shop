@@ -118,21 +118,20 @@
 }
 
 button[type="submit"] {
-  background: linear-gradient(to right, var(--secondary), var(--third));
+  background: var(--gradient);
   color: #fff;
-  border: none;
-  padding: 0.85rem 2rem;
-  border-radius: 2rem;
   font-size: 1.1rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 40px;
+  text-decoration: none;
+  transition: background 0.4s ease, transform 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
 button[type="submit"]:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
+  background: linear-gradient(135deg, var(--secondary), var(--dark));
+  transform: scale(1.05);
 }
 
 .map-container {

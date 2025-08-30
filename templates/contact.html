@@ -1,7 +1,20 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}Контакти{% endblock %}
+{% block title %}Контакти | DeKat Мебели{% endblock %}
+
+{% block meta_description %}Свържете се с DeKat – мебели по поръчка от Банско. Телефон, имейл и карта на локацията ни.{% endblock %}
+{% block meta_keywords %}контакти, мебели по поръчка, Банско, телефон, имейл, DeKat{% endblock %}
+{% block canonical_url %}/contacts/{% endblock %}
+
+{% block og_title %}Контакти | DeKat Мебели{% endblock %}
+{% block og_description %}Свържете се с нас за поръчки и въпроси относно мебелите по поръчка.{% endblock %}
+{% block og_image %}https://dekat.bg/static/media/images/og-contacts.jpg{% endblock %}
+{% block og_url %}/contacts/{% endblock %}
+
+{% block twitter_title %}Контакти | DeKat Мебели{% endblock %}
+{% block twitter_description %}Свържете се с нас – телефон, имейл и локация в Банско.{% endblock %}
+{% block twitter_image %}https://dekat.bg/static/media/images/og-contacts.jpg{% endblock %}
 
 {% block extra_css %}
   <link rel="stylesheet" href="{% static 'css/contact.css' %}">
@@ -16,24 +29,23 @@
 
   <div class="contact-container">
     <div class="contact-info">
-  <h2>📍 Информация</h2>
-  <p><strong>🏠 Адрес:</strong> гр. Банско</p>
-  <p><strong>📞 Телефон:</strong> <a href="tel:+359890202203">+359 890 202 203</a></p>
-  <p><strong>📧 Имейл:</strong> <a href="mailto:info@dekat.bg">info@dekat.bg</a></p>
+      <h2>📍 Информация</h2>
+      <p><strong>🏠 Адрес:</strong> гр. Банско</p>
+      <p><strong>📞 Телефон:</strong> <a href="tel:+359890202203">+359 890 202 203</a></p>
+      <p><strong>📧 Имейл:</strong> <a href="mailto:dekatfurniture@gmail.com">dekatfurniture@gmail.com</a></p>
 
-  <div class="map-container">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11668.400633188103!2d23.490154050000004!3d41.838974449999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ab50cc416a9cd7%3A0x96bc616378d7a406!2z0JHQtdC70YzQutC-0LLQsCDQlNC10LzQuNC90L7Qs9C-0YDQvtCz!5e0!3m2!1sbg!2sbg!4v1713719910000!5m2!1sbg!2sbg"
-      width="100%"
-      height="250"
-      style="border:0; border-radius: 12px;"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-  </div>
-</div>
-
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11668.400633188103!2d23.490154050000004!3d41.838974449999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ab50cc416a9cd7%3A0x96bc616378d7a406!2z0JHQtdC70YzQutC-0LLQsCDQlNC10LzQuNC90L7Qs9C-0YDQvtCz!5e0!3m2!1sbg!2sbg!4v1713719910000!5m2!1sbg!2sbg"
+          width="100%"
+          height="250"
+          style="border:0; border-radius: 12px;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
 
     <div class="contact-form">
       <h2>Пишете ни</h2>
@@ -51,8 +63,7 @@
           {{ form.message.label_tag }}
           {{ form.message }}
         </div>
-        <button type="submit" class="fancy-button"> Изпрати</button>
-
+        <button type="submit" class="fancy-button-contact"> Изпрати</button>
       </form>
     </div>
   </div>
