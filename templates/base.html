@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>{% block title %}My Furniture Store{% endblock %}</title>
 
@@ -67,7 +67,6 @@
   {% block content %}{% endblock %}
 </div>
 
-
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-brand">
@@ -109,3 +108,13 @@
     <p>&copy;2025 DeKat. All rights reserved.</p>
   </div>
 </footer>
+
+<!-- Скриптове преди затварящия body -->
+<script src="{% static 'js/carousel.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+<script src="{% static 'js/scrip2.js' %}"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+</body>
+</html>
