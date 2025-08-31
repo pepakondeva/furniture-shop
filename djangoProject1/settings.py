@@ -35,10 +35,13 @@ SECRET_KEY = config("DJANGO_SECRET_KEY")
 # DEBUG = config("DJANGO_DEBUG", default=False, cast=bool)
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [
+    'www.dekat-furniture.org',
+    'dekat-furniture.org',
+    'furniture-shop-mmoy.onrender.com',
+]
 
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',

@@ -153,62 +153,19 @@
 }
 
 @media (max-width: 768px) {
-  .about-title {
-    font-size: 2.2rem;
-    line-height: 1.3;
-  }
-
-  .about-intro {
-    font-size: 1rem;
-    padding: 0 1rem;
-  }
-
-  .section-title {
-    font-size: 1.4rem;
-  }
-
-  .section-text {
-    font-size: 1rem;
-    padding: 0 1rem;
-  }
-
-  .offer-grid{
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    padding: 0 1rem;
-  }
-
-  .offer-item {
-    font-size: 1rem;
-    padding: 1rem;
-  }
-
-  .offer-item.wide {
-    grid-column: span 1;
-  }
-
-  .fancy-button {
-    font-size: 1rem;
-    padding: 0.85rem 1.5rem;
-  }
-
-  .cta-center {
-    margin-top: 2rem;
-  }
-}
-
-@media (max-width: 480px) {
   .about-section {
     padding: 3rem 1rem;
   }
 
   .about-title {
     font-size: 1.9rem;
+    line-height: 1.3;
   }
 
   .about-intro {
     font-size: 0.95rem;
     line-height: 1.6;
+    padding: 0 1rem;
   }
 
   .section-title {
@@ -217,11 +174,22 @@
 
   .section-text {
     font-size: 0.95rem;
+    padding: 0 1rem;
+  }
+
+  .offer-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0 1rem;
   }
 
   .offer-item {
-    padding: 0.9rem;
     font-size: 0.95rem;
+    padding: 0.9rem;
+  }
+
+  .offer-item.wide {
+    grid-column: span 1;
   }
 
   .fancy-button {
@@ -231,4 +199,17 @@
     padding: 0.8rem 1.2rem;
     border-radius: 1.5rem;
   }
+
+  .cta-center {
+    margin-top: 2rem;
+  }
+
+  .offer-grid .offer-item:nth-child(4) {
+    grid-column: 1 / 2;
+  }
+
+  .offer-grid .offer-item:nth-child(5) {
+    grid-column: 2 / 3;
+  }
 }
+
