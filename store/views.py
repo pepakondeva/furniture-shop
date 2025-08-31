@@ -129,13 +129,26 @@ def contact_view(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
+            name = form.cleaned_data['name']
+            email = form.cleaned_data['email']
+            number = form.cleaned_data.get('number', 'Не е посочен')
+            message = form.cleaned_data['message']
+
+            full_message = (
+                f"Име: {name}\n"
+                f"Имейл: {email}\n"
+                f"Телефон: {number}\n\n"
+                f"Съобщение:\n{message}"
+            )
+
             send_mail(
-                subject=f"Ново съобщение от {form.cleaned_data['name']}",
-                message=form.cleaned_data['message'],
-                from_email=form.cleaned_data['email'],
+                subject=f"Ново съобщение от {name}",
+                message=full_message,
+                from_email=settings.DEFAULT_FROM_EMAIL,
                 recipient_list=[settings.DEFAULT_FROM_EMAIL],
                 fail_silently=False,
             )
+
             messages.success(request, 'Съобщението е изпратено успешно!')
             return redirect('contacts')
 
