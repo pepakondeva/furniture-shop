@@ -9,6 +9,11 @@ from django.views.generic import ListView, TemplateView, DetailView
 from .forms import ContactForm
 from .models import Furniture, Category, Project, ProjectItem
 
+from django.http import HttpResponse
+
+def health_check(request):
+    return HttpResponse("OK")
+
 
 class HomePageView(TemplateView):
     template_name = 'main_page.html'

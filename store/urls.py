@@ -1,6 +1,6 @@
 from django.urls import path
 from .views import FurnitureListView, HomePageView, ForUsView, ServicesView, DetailFurnitureView, \
-    ItemProjectListView, DetailProjectItemView, contact_view
+    ItemProjectListView, DetailProjectItemView, contact_view, health_check
 
 urlpatterns = [
     path('', HomePageView.as_view(), name='store'),
@@ -14,5 +14,7 @@ urlpatterns = [
     path('project/item/<slug:slug>/<int:pk>/', DetailProjectItemView.as_view(), name='project-item-detail'),
 
     path('contacts/', contact_view, name='contacts'),
+
+    path('health/', health_check, name='health-check'),
 
 ]
