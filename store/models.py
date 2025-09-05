@@ -27,6 +27,7 @@ class ProjectItem(models.Model):
 
     class Meta:
         verbose_name_plural = 'Project_Items'
+        ordering = ['-id']
 
     def __str__(self):
         return self.name
@@ -74,6 +75,7 @@ class Furniture(models.Model):
     #  how it will look like in the admin and db
     class Meta:
         verbose_name_plural = 'furnitures'
+        ordering = ['-id']
 
     def __str__(self):
         return self.name
