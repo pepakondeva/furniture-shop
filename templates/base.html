@@ -1,13 +1,69 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bg">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>{% block title %}My Furniture Store{% endblock %}</title>
+  {# --- TITLE --- #}
+  <title>{% block title %}DEKAT Furniture – мебели по поръчка | Банско & Добринище{% endblock %}</title>
 
-  <!-- Styles -->
+  {# --- CANONICAL --- #}
+  <link rel="canonical" href="https://www.dekat-furniture.org{{ request.path }}" />
+
+  {# --- ROBOTS --- #}
+  <meta name="robots" content="index,follow" />
+
+  {# --- META DESCRIPTION (може да се override-не в страница) --- #}
+  {% block meta_description %}
+  <meta name="description" content="DEKAT Furniture – производител на мебели по поръчка в Банско и региона. Качество, дизайн и индивидуални решения за дома и бизнеса." />
+  {% endblock %}
+
+  {# --- (НЕ е критично) keywords: Google не ги ползва, но ако държиш, остави: --- #}
+  <meta name="keywords" content="DEKAT Furniture, DeKat мебели, мебели по поръчка, Банско, кухни, спални, интериорен дизайн">
+
+  <meta name="author" content="DEKAT Furniture">
+
+  {# --- Open Graph / Facebook --- #}
+  <meta property="og:title" content="{% block og_title %}DEKAT Furniture – мебели по поръчка | Банско{% endblock %}">
+  <meta property="og:description" content="{% block og_description %}Изработваме мебели по поръчка – вижте нашите проекти и услуги и се свържете за консултация.{% endblock %}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.dekat-furniture.org{{ request.path }}">
+  <meta property="og:image" content="https://www.dekat-furniture.org{% static 'media/images/logo.png' %}">
+  <meta property="og:site_name" content="DEKAT Furniture">
+
+  {# --- Twitter Card --- #}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{% block tw_title %}DEKAT Furniture – мебели по поръчка{% endblock %}">
+  <meta name="twitter:description" content="{% block tw_desc %}Мебели по поръчка в Банско – качество и персонален дизайн.{% endblock %}">
+  <meta name="twitter:image" content="https://www.dekat-furniture.org{% static 'media/images/logo.png' %}">
+
+  {# --- JSON-LD Organization / LocalBusiness (помага за бранд заявки „DeKat“) --- #}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FurnitureStore",
+    "name": "DEKAT Furniture",
+    "brand": "DEKAT",
+    "url": "https://www.dekat-furniture.org",
+    "logo": "https://www.dekat-furniture.org{% static 'media/images/logo.png' %}",
+    "image": "https://www.dekat-furniture.org{% static 'media/images/logo.png' %}",
+    "telephone": "+359890202203",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Банско",
+      "addressCountry": "BG"
+    },
+    "areaServed": ["Банско","Добринище","Благоевград"],
+    "sameAs": [
+      "https://www.facebook.com/share/15YeCScxjr/",
+      "https://www.instagram.com/dekatfurniture/"
+    ]
+  }
+  </script>
+
+  {# --- Styles & Favicon --- #}
+  <link rel="icon" href="{% static 'media/images/logo.png' %}" type="image/png">
   <link rel="stylesheet" href="{% static 'css/base.css' %}">
   <link rel="stylesheet" href="{% static 'css/forus.css' %}">
   <link rel="stylesheet" href="{% static 'css/contact.css' %}">
@@ -18,128 +74,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-<link rel="icon" href="{% static 'media/images/logo.png' %}" type="image/png">
+  {# --- Google Analytics --- #}
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-W54VC306JN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-W54VC306JN');
+  </script>
 
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-W54VC306JN"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-W54VC306JN');
-</script>
-
-<meta name="description" content="DeKat Мебели – поръчкови мебели в Банско. Разгледайте нашите проекти, услуги и свържете се с нас за индивидуални решения.">
-<meta name="keywords" content="DeKat мебели, поръчкови мебели, мебели по поръчка, Банско, мебели в Банско, интериорен дизайн, проекти, кухни, спални, услуги">
-<meta name="author" content="DeKat Furniture">
-
-<meta property="og:title" content="DeKat Мебели | Поръчкови мебели в Банско">
-<meta property="og:description" content="Изработваме мебели по поръчка. Вижте нашите проекти и се свържете с нас за консултация.">
-<meta property="og:image" content="{% static 'media/images/logo.png' %}">
-<meta property="og:url" content="{{ request.build_absolute_uri }}">
-<meta property="og:type" content="website">
-
-
+  {# Позволява страници да инжектират свои допълнителни тагове при нужда #}
+  {% block extra_head %}{% endblock %}
 </head>
-
-<body>
-
-<nav class="navbar">
-  <!-- Logo on the left -->
-  <div class="logo">
-    <a href="{% url 'store' %}">
-      <img src="{% static 'media/images/logo.png' %}" alt="DeKat Мебели - Лого" class="logo-img">
-    </a>
-  </div>
-
-  <ul class="nav-links" id="nav-links">
-    <li><a href="{% url 'store' %}">Начална страница</a></li>
-    <li><a href="{% url 'forus' %}">За нас</a></li>
-
-    <li class="dropdown">
-      <a href="#">Проекти ▾</a>
-      <ul class="dropdown-menu">
-        {% for project in projects %}
-          <li><a href="{% url 'product_list_by_project' project.slug project.id %}">{{ project.name }}</a></li>
-        {% empty %}
-          <li><a href="#">Няма проекти</a></li>
-        {% endfor %}
-      </ul>
-    </li>
-
-    <li><a href="{% url 'services' %}">Услуги</a></li>
-
-    <li class="dropdown">
-      <a href="#">Категории ▾</a>
-      <ul class="dropdown-menu">
-        {% for category in categories %}
-          <li><a href="{% url 'product_list_by_category' category.slug category.id %}">{{ category.name }}</a></li>
-        {% empty %}
-          <li><a href="#">Няма категории</a></li>
-        {% endfor %}
-      </ul>
-    </li>
-
-    <li><a href="{% url 'contacts' %}">Контакти</a></li>
-  </ul>
-
-  <button class="menu-toggle" id="menu-toggle">☰</button>
-</nav>
-
-<div class="container">
-  {% block content %}{% endblock %}
-</div>
-
-<footer class="footer">
-  <div class="footer-inner">
-    <div class="footer-brand">
-      <h2>DeKat <span class="accent">Мебели</span></h2>
-      <p>Създаваме мебели, които превръщат къщата в дом.</p>
-    </div>
-
-    <div class="footer-links">
-      <h4>Навигация</h4>
-      <ul>
-        <li><a href="{% url 'store' %}">Начало</a></li>
-        <li><a href="{% url 'forus' %}">За нас</a></li>
-        <li><a href="{% url 'services' %}">Услуги</a></li>
-        <li><a href="{% url 'contacts' %}">Контакти</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-contact">
-      <h4>Контакт</h4>
-      <p>📞 <a href="tel:+359890202203">+359 890 202 203</a></p>
-      <p>📧 <a href="mailto:dekatfurniture@gmail.com">dekatfurniture@gmail.com</a></p>
-      <p>📍 гр.Банско</p>
-    </div>
-
-    <div class="footer-socials">
-      <h4>Последвайте ни</h4>
-      <div class="social-icons">
-        <a href="https://www.facebook.com/share/15YeCScxjr/" target="_blank" aria-label="Facebook">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="https://www.instagram.com/dekatfurniture/" target="_blank" aria-label="Instagram">
-          <i class="fab fa-instagram"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <div class="footer-bottom">
-    <p>&copy;2025 DeKat. All rights reserved.</p>
-  </div>
-</footer>
-
-<!-- Скриптове преди затварящия body -->
-<script src="{% static 'js/carousel.js' %}"></script>
-<script src="{% static 'js/script.js' %}"></script>
-<script src="{% static 'js/scrip2.js' %}"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-
-</body>
-</html>
