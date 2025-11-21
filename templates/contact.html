@@ -47,29 +47,29 @@
       </div>
     </div>
 
-    <div class="contact-form">
-      <h2>Пишете ни</h2>
-      <form method="post" novalidate>
-        {% csrf_token %}
-        <div class="form-group">
-          {{ form.name.label_tag }}
-          {{ form.name }}
-        </div>
-        <div class="form-group">
-          {{ form.email.label_tag }}
-          {{ form.email }}
-        </div>
-          <div class="form-group">
-          {{ form.number.label_tag }}
-          {{ form.number }}
-        </div>
-        <div class="form-group">
-          {{ form.message.label_tag }}
-          {{ form.message }}
-        </div>
-        <button type="submit" class="fancy-button-contact"> Изпрати</button>
-      </form>
-    </div>
-  </div>
+{#    <div class="contact-form">#}
+{#      <h2>Пишете ни</h2>#}
+{#      <form method="post" novalidate>#}
+{#        {% csrf_token %}#}
+{#        <div class="form-group">#}
+{#          {{ form.name.label_tag }}#}
+{#          {{ form.name }}#}
+{#        </div>#}
+{#        <div class="form-group">#}
+{#          {{ form.email.label_tag }}#}
+{#          {{ form.email }}#}
+{#        </div>#}
+{#          <div class="form-group">#}
+{#          {{ form.number.label_tag }}#}
+{#          {{ form.number }}#}
+{#        </div>#}
+{#        <div class="form-group">#}
+{#          {{ form.message.label_tag }}#}
+{#          {{ form.message }}#}
+{#        </div>#}
+{#        <button type="submit" class="fancy-button-contact"> Изпрати</button>#}
+{#      </form>#}
+{#    </div>#}
+{#  </div>#}
 </section>
 {% endblock %}
