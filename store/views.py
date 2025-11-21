@@ -86,8 +86,6 @@ class DetailFurnitureView(DetailView):
 
 # Project and their items
 
-# Project and items
-
 class ProjectListView(ListView):
     model = Project
 
